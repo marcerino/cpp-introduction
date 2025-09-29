@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "1bff05fa31d85c7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8153fbf141bab755",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e32432dcdf70e92f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Folien/day0.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "day0"
+            }
+          }
+        ]
+      },
+      {
+        "id": "81d28714c242fcb7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf4273840663d607",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notizen/C++ Grundlagen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C++ Grundlagen"
+            }
+          },
+          {
+            "id": "9a631e8f72247e07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notizen/C++ Grundlagen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C++ Grundlagen"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1c6852af5eee14b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1ef9c08f8481e66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6984fd2cec7a81f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "43932907dbfaa6a5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9089f302ecc6ec55",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "329c9ca62867c8e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "46337ff82eca9dcd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da14b4c91f226d45",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notizen/C++ Grundlagen.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for C++ Grundlagen"
+            }
+          },
+          {
+            "id": "a88296fb985b40f1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notizen/C++ Grundlagen.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from C++ Grundlagen"
+            }
+          },
+          {
+            "id": "3cc6e7b3eb8daf80",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "912adf08bf72abd1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notizen/C++ Grundlagen.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of C++ Grundlagen"
+            }
+          },
+          {
+            "id": "57b94cb5ef7a8f5e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "9a631e8f72247e07",
+  "lastOpenFiles": [
+    "Folien/day0.pdf",
+    "Notizen/C++ Grundlagen.md",
+    "Notizen/Untitled.md",
+    "Folien",
+    "Code",
+    "Notizen"
+  ]
+}
