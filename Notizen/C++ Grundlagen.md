@@ -1,4 +1,4 @@
-oHerr Chris Bielow, Herr Sando Andreotti
+Herr Chris Bielow, Herr Sando Andreotti
 ___
 A6 SR 031 Vorlesung | Lab T9 K036 | Test Fr 13-14 |
 ___
@@ -127,7 +127,19 @@ wenn mit :#include cstdint gearbeitet wird.
 - Use std::cin to read user input. std::cout and std::cerr are used with output stream operator <<. std::cin is used with the input stream operator >>. You can "chain" multiple input/output operations by repeatedly invoking the respective stream operator. 
 - The input stream implictly "splits input" at whitespaces. 
 - You don't need to understand how the stream operators work at this point.
-
+``` c++
+#include <iostream> 
+#include <string> 
+int main() {
+	std::string s{"foo"}; 
+	std::cout << "Welcome to the " << s << " program!\n"; 
+	std::cout << "Enter two floating point numbers followed by [RETURN]\n"; 
+ 
+	double d1{};
+	double d2{}; std::cin >> d1 >> d2; 
+	std::cout << "The sum is: " << d1 + d2 << '\n'; 
+	}
+```
 ## Arrays, Vectors and Strings
 
 Array sind hier wirklich nur Sequenzielle abfolge von Feldern (wiein scala  also nicht dynamisch)
@@ -196,7 +208,7 @@ std::string is similar to std::vector\<char>
 
 ```c++
 #include <string> 
-
+	
 // declare an empty string: 
 std::string dd; 
 
@@ -209,3 +221,81 @@ std::cout << df.size(); // prints 6
 df.push_back('a'); std::cout << df.size(); // prints 7 
 std::cout << df; // prints "FOOBARa"
 ```
+____
+## Augaben1
+hello world Programm
+
+
+ g++ -std=c++17 -Wall -Wextra -Werror -pedantic YOUR_FILE.cpp -o hello
+ 
+- -std=c++17 Defines which standard  
+- -Wall  all errors
+- -Wextra extends Errorrange
+- -Werror Very narrow
+- -pedantic YOUR_FILE.cpp doesnt let things slide  
+-  -o hello outputfile 
+
+# Tasks for the computer lab I Integral types:
+
+1. Write a program that prints for the types char, short, int, long, long long and the respective unsigned versions (e.g. unsigned int):
+	1. the size in bits
+	2. the largest possible value (find the C++ way, not the C way) 
+	3. the smallest possible value (find the C++ way, not the C way) 
+
+		Hello, World!  
+		Char:  
+		Charbytes: 1 = 8 bits    
+		large /small: 127/-128  
+		U_Char:  
+		SCharbytes: 1 = 8 bites    
+		large /small: 255/-2147483648  
+		short:  
+		short bytes: 2 = 16 bites    
+		large /small: 32767/-32768  
+		ushort:  
+		ushort bytes: 2 = 16 bites    
+		large /small: 65535/0  
+		int:  
+		int bytes: 4 = 32 bites    
+		large /small: 2147483647/-2147483648  
+		int:  
+		int bytes: 4 = 32 bites    
+		large /small: 4294967295/0  
+		long:  
+		long bytes: 8 = 64 bites    
+		large /small: 9223372036854775807/-9223372036854775808  
+		ULONG:  
+		Long bytes: 8 = 64 bites    
+		large /small: 18446744073709551615/0  
+		long long:  
+		long long bytes: 8 = 64 bites    
+		large /small: 9223372036854775807/-9223372036854775808  
+		Ulong long:  
+		Ulong long bytes: error = 64 bites    
+		large /small: 18446744073709551615/0
+2. What happens when you assign a value that is too large/small? Is this defined behaviour (according to the C++ standard)?
+Hlloworld.cpp:22:15: Fehler: Überlauf in Umwandlung von »long int« nach »short int« ändert den Wert von »21474836472« in »-8« [-Werror=overflow]  
+22 |     short a = 21474836472;  
+     |               ^~~~~~~~~~~  
+cc1plus: Alle Warnungen werden als Fehler behandelt
+
+
+## Tasks for the computer lab II
+Floating point types:
+
+
+### Aufgabe 4
+
+mit [] notation
+Task 4: One Word one NumberWasser 7  
+Wasser 7  
+/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) with _CharT = char; _Traits = std::char_traits ; _Alloc = std::allocatorchar;  reference = char&; size_type = long unsigned int]: Assertion '__pos = size()' failed.  
+Abgebrochen (Speicherabzug geschrieben)
+
+mit .at() notation
+
+Task 4: One Word one NumberWasser 8  
+Wasser 8  
+terminate called after throwing an instance of 'std::out_of_range'  
+ what():  basic_string::at: __n (which is 8) >= this->size() (which is 6)  
+Abgebrochen (Speicherabzug geschrieben)
