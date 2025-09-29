@@ -17,7 +17,6 @@ void task1(){
     std::cout << "ushort:\n" << "ushort bytes: " << sizeof(u_short) << " = " << (sizeof(u_short)*8) << " bites " << "\n large /small: " << USHRT_MAX << "/" << "0" << "\n"; 
     std::cout << "int:\n" << "int bytes: " << sizeof(int) << " = " << (sizeof(int)*8) << " bites " << "\n large /small: " << INT_MAX << "/" << INT_MIN << "\n";
     std::cout << "int:\n" << "int bytes: " << sizeof(u_int) << " = " << (sizeof(u_int)*8) << " bites " << "\n large /small: " << UINT_MAX << "/" << "0" << "\n"; 
-
     std::cout << "long:\n" << "long bytes: " << sizeof(long) << " = " << (sizeof(long)*8) << " bites " << "\n large /small: " << LONG_MAX << "/" << LONG_MIN << "\n"; 
     std::cout << "ULONG:\n" << "Long bytes: " << sizeof(u_long) << " = " << (sizeof(u_long)*8) << " bites " << "\n large /small: " << ULONG_MAX << "/" << "0" << "\n"; 
     std::cout << "long long:\n" << "long long bytes: " << sizeof(long long) << " = " << (sizeof(long long)*8) << " bites " << "\n large /small: " << LONG_LONG_MAX << "/" << LONG_LONG_MIN << "\n"; 
@@ -39,6 +38,7 @@ void task2() {
 	std::cout << "The sum is: " << d1 + d2 << '\n'; 
     std::cout << "Round down = " << std::floor(d1+d2) << "\n";
     std::cout << "Round up = " << std::ceil(d1+d2) << "\n"; 
+    std::cout << "Squareroot = " << sqrt(d1+d2) << "\n";
     std::cout << std::setprecision(2);
     std::cout << (d1+d2) << "\n";
     std::cout << std::setprecision(5);
@@ -65,6 +65,6 @@ int main() // I am a code comment!
 {
     //helloworld();
     //task1();
-    //task2();
-    task3();
+    task2();
+    //task3();
 }

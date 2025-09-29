@@ -282,6 +282,8 @@ cc1plus: Alle Warnungen werden als Fehler behandelt
 
 ## Tasks for the computer lab II
 Floating point types:
+Round down and up act as expectet
+sqrt of sqrt of negative is -nan
 
 
 ### Aufgabe 4

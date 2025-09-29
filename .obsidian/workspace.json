@@ -111,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "329c9ca62867c8e5",
@@ -200,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,9 +217,15 @@
   "lastOpenFiles": [
     "Folien/day0.pdf",
     "Notizen/C++ Grundlagen.md",
+    "cppCode/sortingalgorithms.cpp",
+    "cppCode/hello",
+    "cppCode/Helloworld.cpp",
+    "cppCode",
+    "Code/Helloworld",
+    "Code/hello",
+    "Code/Helloworld.cpp",
+    "Helloworld.cpp",
     "Notizen/Untitled.md",
-    "Folien",
-    "Code",
-    "Notizen"
+    "Folien"
   ]
 }
