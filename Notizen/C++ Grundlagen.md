@@ -301,3 +301,7 @@ Wasser 8
 terminate called after throwing an instance of 'std::out_of_range'  
  what():  basic_string::at: __n (which is 8) >= this->size() (which is 6)  
 Abgebrochen (Speicherabzug geschrieben)
+
+
+___
+Musterlösung: der Max und Min mit  std::numeric_limits, wo member funktionen gecalled werden. sizeof
