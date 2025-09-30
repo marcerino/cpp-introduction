@@ -11,50 +11,13 @@
             "id": "e32432dcdf70e92f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Folien/day1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "day1"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
-      },
-      {
-        "id": "81d28714c242fcb7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bf4273840663d607",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notizen/C++ Grundlagen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "C++ Grundlagen"
-            }
-          },
-          {
-            "id": "9a631e8f72247e07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notizen/Control flow, functions (overloading), function templates.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Control flow, functions (overloading), function templates"
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a631e8f72247e07",
+  "active": "e32432dcdf70e92f",
   "lastOpenFiles": [
+    "Notizen/C++ Grundlagen.md",
     "Folien/day1.pdf",
     "Notizen/Control flow, functions (overloading), function templates.md",
     "cppCode/test",
@@ -223,7 +186,6 @@
     "test.cpp",
     "Folien/day0.pdf",
     "cppCode/crontroll",
-    "Notizen/C++ Grundlagen.md",
     "cppCode/sortingalgorithms.cpp",
     "cppCode/hello",
     "cppCode/Helloworld.cpp",

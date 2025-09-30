@@ -146,8 +146,31 @@ also square vo double in  ... etc. pp.
 aber Mann kann sich zum beispiel
 
 # Funktions-Templates
-
-
+Templates sind ein weg für einen "Späte-Bindung-Polymorphismus". Der Compiler bekommt gesagt wie ein Code ausgeführt ohne den genauen typen zu wissen.
+gebraucht wird ein `Template <typename>`, welche dann als `typ` in der funktion genutzt werden kann.
+Beispiel: 
+```c++
+template <typename U>
+const auto Fibonaccilike(U n1, U n2, int32_t c)
+{
+	U helper{};
+	int32_t counter = 0;
+	while (counter < c)
+	{
+		helper = n1;
+		n1 = n1+n2;
+		n2 = helper;
+		counter ++;
+	}	
+	return n1;
+}
+int main()
+{
+	const auto result = Fibonaccilike(3.6,2.4,2);
+}
+```
+`auto` lohnt sich hier, da der `typ` erst von der eingabe abhängt.
+Beachte aber, das durch die Eingabe der *Argumente* im quellcode bereits das Ergebnis und somit der typ zur Completime feststeht und ein userinput nicht möglich, da auto bereits bei Compiletime den `typ` wissen muss. 
 # Tasks
 ## Task 1
 Postleitzahl gibt es eine Tabelle
