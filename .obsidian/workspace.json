@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Futions",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,13 +107,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "329c9ca62867c8e5",
@@ -220,15 +218,15 @@
   "lastOpenFiles": [
     "Folien/day1.pdf",
     "Notizen/Control flow, functions (overloading), function templates.md",
+    "cppCode/test",
+    "cppCode/test.cpp",
+    "test.cpp",
     "Folien/day0.pdf",
+    "cppCode/crontroll",
     "Notizen/C++ Grundlagen.md",
     "cppCode/sortingalgorithms.cpp",
     "cppCode/hello",
     "cppCode/Helloworld.cpp",
-    "cppCode",
-    "Code/Helloworld",
-    "Code/hello",
-    "Code/Helloworld.cpp",
-    "Helloworld.cpp"
+    "cppCode"
   ]
 }

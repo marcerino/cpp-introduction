@@ -108,7 +108,7 @@ ___
 # Funktionen
 syntax:
 ```c++
-rückgabetyp name(parametertyp name, parametertyp name)
+rückgabetyp name( const parametertyp referenz nameinfunktion , parametertyp name)
 {
 Codeblock
 }
@@ -123,7 +123,7 @@ ___
 Große Objekte werden beim Return nicht Kopiert (ab neuen C++ Versionen) sondern direkt übergeben
 ___
 Recommendations :
-1. By default make all function parameters const & 
+1. By default make all function parameters `const &` 
 2. Ask yourself: do I want to change it? 
 	1. no 
 		1. arithmetic type? → just const 
@@ -152,7 +152,88 @@ aber Mann kann sich zum beispiel
 ## Task 1
 Postleitzahl gibt es eine Tabelle
 
-## Task 2
+## Task 2A
+What happens when you return something of const type from a function?
 
+wenn `const func()`, dann inmutable:
+wenn `return const foo` oder `const foo; return foo`, resultat ist mutable 
 
+Can constants be initialised from functions that return a non-const type?
+ja, const von einer nicht const rückgabe ist möglich.
+
+What happens when you return a reference?
+bei:
+```cpp
+
+std::string & clash ()
+{
+std::string A{"A"};
+std::string & ref = A;
+return ref;
+}
+```
+Eine Ausabe die leer ist
+Return einer Referenz auf ein Lokales Objekt ist ein Null pointer oder dangleing reference
+Return einer referenz eines vorherexestierenden Objekts verhält sich normal.
+
+Das Example von seite 21:
+```c++
+double & square() 
+{ 
+double d{5.3}; 
+return d; // 💣 
+} 
+double & d = square(); // 💥
+```
+Resultat:
+`Referenz auf lokale Variable »d« zurückgegeben -Werror=return-local-addr]`
+## Task 2B
+What does the program print? Why? How can you "fix" it?
+```c++
+#include <iostream> 
+template <typename T> 
+void print(T const i) 
+{ 
+	std::cout << "Integer!\n"; 
+} 
+void print(float const i) 
+{ 
+std::cout << "Floating point!\n";
+} 
+
+int main() 
+{ 
+print(3.3);
+}
+```
+Ausgabe:
+```bash
+controllflow.cpp: In function »void print(float)«:  
+controllflow.cpp:87:24: Fehler: unverwendeter Parameter »i« [-Werror=unused-parameter]  
+  87 | void print(float const i)  
+     |            ~~~~~~~~~~~~^  
+controllflow.cpp: In instantiation of »void print(T) [mit T = double]«:  
+controllflow.cpp:179:10:   required from here  
+ 179 |     print(3.3);  
+     |     ~~~~~^~~~~  
+controllflow.cpp:83:20: Fehler: unverwendeter Parameter »i« [-Werror=unused-parameter]  
+  83 | void print(T const i)  
+     |            ~~~~~~~~^  
+cc1plus: Alle Warnungen werden als Fehler behandelt
+```
+Schritt 1:
+entfernen der `i` aus der *Funktionssignatur* da diese nicht gebracht/genutzt  werden.
+nun ist die Ausgabe: `Integer!`
+Schritt 2:
+deklarieren des typs von `3.3` als `float dpd = 3.3; print(dpd)` da `print(3.3)` per default 3.3 als Double interpretiert/kompiliert.
 ## Task 3
+
+make your function 'constexpr', e.g. constexpr auto fib(...) { ... }. Is it sufficient to capture the return value as const auto fib_value = fib(...); or do you need constexpr here as well? 
+Apparently yes, compiler doesnt even complein if i capture it without const, and no matter what neither const nor const expr make it immutable idk y tho.
+
+
+
+Compute the 5th canonical fibonacci number at compile time. 
+3
+Can you also compute the 100th number at compile time?
+nei, selbst beim nutzen vo long long übersteigt die Nummer die range des Datentypen und der Compiler wirft eine range overflow.
