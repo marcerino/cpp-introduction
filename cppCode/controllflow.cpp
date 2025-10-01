@@ -155,7 +155,7 @@ void task1 (){
     int32_t PLZ{};  
     bool result{};
     int32_t gesamt{};  
-    double lebendinberin{};  
+    int32_t lebendinberin{};  
     std::string Name{};
     std::string nameofsmalles{};
     int32_t SmallestPLZ{};
@@ -203,7 +203,7 @@ void task1 (){
         weiterepersonen = exitfrage();
     }
     
-    double percberlinlebend = (lebendinberin/gesamt) *100;
+    double percberlinlebend = (static_cast<double>(lebendinberin)/gesamt) *100;
     // Print Statistik
     std::cout << "Overall live " << percberlinlebend << "Prozent der Personen in Berlin \n" << "Die kleinste PLZ hat " << nameofsmalles << " mit der " << SmallestPLZ << "\n";
 
