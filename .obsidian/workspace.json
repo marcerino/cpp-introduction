@@ -204,8 +204,8 @@
   "active": "e32432dcdf70e92f",
   "lastOpenFiles": [
     "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
-    "Notizen/Control flow, functions (overloading), function templates.md",
     "Folien/day2.pdf",
+    "Notizen/Control flow, functions (overloading), function templates.md",
     "Folien/day1.pdf",
     "cppCode/lambda",
     "cppCode/lambda-structs-class.cpp",

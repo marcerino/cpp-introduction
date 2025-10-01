@@ -1,8 +1,7 @@
 #include <vector>
 #include <iostream>
-#include <bits/stdc++.h>
 #include <cstdint>
-
+#include <string>
 using namespace std;
 
 // Overload << for vector DIESER CODE DIENT DER pRINT VON VEKTOREN, UND IST AUS DEM INTERNET KOPIERT <3
@@ -107,11 +106,10 @@ struct Person{
         return "Name: " +name + " Alter: " + std::to_string(age) +" Agenda: " + genderstringis(geschlecht) + "\n" ;
     }
 
-    Person & operator<(Person const & c) 
+
+    bool operator<(Person const & c)  const
     {
-         re += c.re; 
-         im += c.im; 
-         return *this;
+        return age < c.age;
     }
 
 };
@@ -148,6 +146,8 @@ void task3(){
     }
 
     std::cout << personenvec;
+
+    std::cout << (Person{"Jan",  2 , GENDER::MALE} < Person{"Jana",  3 ,GENDER::DIVERSE} );
 }
 
 //Task IV

@@ -160,7 +160,9 @@ private:
 	double im{}; 
 public: 
 	Complex & operator+=(Complex const & c) { 
-	re += c.re; im += c.im; return *this; 
+	re += c.re;
+	im += c.im; 
+	return *this; 
 	} 
 }; 
 // private members disable easy initial. 
