@@ -230,3 +230,5 @@ void example_func() { std::cout << "!!!"; }
 4\. Teilaufgabe mach ein mapping
 ## Task 3 - Opertor Implementerung
 ## Task 4 - Komplexe Zahlen und Seperate Compiling
+Why can templates not have their definitions in separate cpp files? Think about / find out!
+Weil teoretisch der Typ bereits compiliert in einer Anderen File ist 

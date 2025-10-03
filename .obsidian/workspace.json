@@ -201,10 +201,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e32432dcdf70e92f",
+  "active": "647ec6971e0394d0",
   "lastOpenFiles": [
-    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
+    "cppCode/Complex.hpp",
+    "Complex.hpp",
+    "Complex.",
     "Folien/day2.pdf",
+    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
     "Notizen/Control flow, functions (overloading), function templates.md",
     "Folien/day1.pdf",
     "cppCode/lambda",
@@ -213,8 +216,6 @@
     "lambda-structs-class",
     "Notizen/C++ Grundlagen.md",
     "cppCode/test",
-    "cppCode/test.cpp",
-    "test.cpp",
-    "Folien/day0.pdf"
+    "cppCode/test.cpp"
   ]
 }

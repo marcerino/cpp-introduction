@@ -2,6 +2,8 @@
 #include <iostream>
 #include <cstdint>
 #include <string>
+#include <algorithm>
+#include "Complex.hpp"
 using namespace std;
 
 // Overload << for vector DIESER CODE DIENT DER pRINT VON VEKTOREN, UND IST AUS DEM INTERNET KOPIERT <3
@@ -145,24 +147,46 @@ void task3(){
         exit = !exitfrage();
     }
 
-    std::cout << personenvec;
+    std::vector<Person> personenvec2 = personenvec;
 
-    std::cout << (Person{"Jan",  2 , GENDER::MALE} < Person{"Jana",  3 ,GENDER::DIVERSE} );
+    std::cout << "Pre sort: \n" << personenvec;
+    
+    std::sort(personenvec.begin(),personenvec.end());
+
+    std::cout << "post sort: \n" << personenvec;
+
+    std::sort(personenvec2.begin(), personenvec2.end(), [](Person const & a, Person const & b){return a.name < b.name;}); //Via Lambda Func
+
+    std::cout << "post sort lambda: \n" << personenvec2;
+
+    std::sort(personenvec2.begin(), personenvec2.end(), [](Person const & a, Person const & b){return a.name < b.name;}); //Via Lambda Func
+
+    std::cout << "post sort alphabetical: \n" << personenvec2;
+
+    if (personenvec2.size() >0){
+        std::cout << "First Person : " << personenvec2.at(0).print("") << "Last Peroson : " << personenvec2.at(personenvec2.size()-1).print("") << "\n";
+    }
+    //std::cout << (Person{"Jan",  2 , GENDER::MALE} < Person{"Jana",  3 ,GENDER::DIVERSE} );
 }
 
 //Task IV
-void task4(){}
+
+ 
+
+void task4(){
+    Complex<double> a{};
+    Complex<double> b{};
+
+    std::cout << (a==b) << true <<"\n"; 
+} 
 
 
 //MaintaskFunktions
-
-
-
 int main(){
-    task1();
-    task2();
-    task3();
-//    task1();
+    //task1();
+    //task2();
+    //task3();
+    task4();
 
 
 }
