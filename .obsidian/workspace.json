@@ -31,12 +31,14 @@
             "id": "914abea4d8f31ca2",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Folien/day2.pdf"
+                "file": "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "day2"
+              "icon": "lucide-file",
+              "title": "Lambdas, Enums, struct and class, class template, compilation"
             }
           },
           {
@@ -53,7 +55,8 @@
               "title": "tuples, more data containers, algorithms"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,22 +215,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "914abea4d8f31ca2",
+  "active": "5de8d9ff23e6c295",
   "lastOpenFiles": [
+    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
     "Notizen/tuples, more data containers, algorithms.md",
+    "Notizen/C++ Grundlagen.md",
+    "Folien/day2.pdf",
     "Folien/day3.pdf",
     "media",
     "Untitled",
     "media/Pasted image 20251005223656.png",
-    "Folien/day2.pdf",
-    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
     "cppCode/Complex.hpp",
     "Complex.hpp",
     "Complex.",
     "Notizen/Control flow, functions (overloading), function templates.md",
     "Folien/day1.pdf",
     "cppCode/lambda",
-    "cppCode/lambda-structs-class.cpp",
-    "Notizen/C++ Grundlagen.md"
+    "cppCode/lambda-structs-class.cpp"
   ]
 }

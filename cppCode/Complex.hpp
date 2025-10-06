@@ -46,28 +46,28 @@ public:
 	return *this; 
 	} ;
 
-    Complex operator+(Complex c) const 
+    Complex Complex::operator+(Complex c) const 
     { 
         return (c += *this);
     };
 
-    Complex operator-(Complex c) const 
+    Complex Complex::operator-(Complex c) const 
     { 
         return (c -= *this);
     };
-    Complex operator*(Complex c) const 
+    Complex Complex::operator*(Complex c) const 
     { 
         return (c *= *this);
     };
-    Complex operator/(Complex c) const 
+    Complex Complex::operator/(Complex c) const 
     { 
         return (c /= *this);
     };
     //comparison Operator
-    bool operator==(Complex c)  const
+    bool Complex::operator==(Complex c)  const
     {
         return (re == c.re && im == c.im);
     };
 
-    bool operator!=(Complex const & c) const { return !(*this == c); }
+    bool Complex::operator!=(Complex const & c) const { return !(*this == c); }
 };
