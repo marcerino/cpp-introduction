@@ -7,7 +7,7 @@ double ratio = numbln/num_total; // liefert nur eine Int
 double ratio = static_cast <double> (numbln)/numtotal; //numbln gecastet als double somit doubleint division rückgabe ist double
 ```
 # Lambdas
-Angenommen du hast eine Funktion die quadriert und eine die die wurzel Zieht. für alle elemente in eine Vektor.,  Diese gleichen sich i allem außer der eigentlichen Operationen.
+Angenommen du hast eine Funktion die quadriert und eine die die wurzel Zieht. für alle Elemente in eine Vektor.,  Diese gleichen sich i allem außer der eigentlichen Operationen.
 
 ```c++
 template <typename TElem, typename TLambda> 
@@ -32,8 +32,8 @@ lamda Funktionen werden mit \[]  initialisier, das `auto` zeigt **nicht** auf de
 ___
 `auto square = [] (auto const & elem) { return elem * elem; };`
 - Lambdas are objects and each lambda has a distinct type – that's why we can only save them in a variable with deduced type and why functions need to take them as template parameters. 
-- A minimal Lambda that does nothing is [](){}. 
-- [] introduces a Lambda definition (other things can go into the [] - capture group, but we won't cover that now). 
+- A minimal Lambda that does nothing is \[](){}. 
+- \[] introduces a Lambda definition (other things can go into the \[] - capture group, but we won't cover that now). 
 - () contains the parameters, just like with ordinary functions except that auto is valid (even before C++20). 
 - {} contains the body of the lambda function. 
 - The return type of the Lambda is deduced by default.
@@ -219,11 +219,25 @@ int main() { example_func(); }
 example.hpp
 #pragma once
 void example_func();
+
 example.cpp
 #include <iostream> 
 #include "example.hpp" 
 void example_func() { std::cout << "!!!"; }
 ```
+
+####
+Build-process unix:
+First we build an object file for every cpp other than main:
+```bash
+% g++ -std=c++17 -Wall -Wextra -Werror -pedantic example.cpp -c 
+```
+(note the -c!) This created example.o.
+Finally we build main.cpp and link it with the existing object files:
+```bash
+% g++ -std=c++17 -Wall -Wextra -Werror -pedantic main.cpp example.o 
+```
+In larger projects build-systems like CMake, Meson, Gnu-Make, Ninja or a combination thereof handle this for us.
 # Aufgaben
 ## Task 1 - Filtern
 ## Task 2 - Structs

@@ -288,10 +288,10 @@ sqrt of sqrt of negative is -nan
 
 ### Aufgabe 4
 
-mit [] notation
+mit \[] notation
 Task 4: One Word one NumberWasser 7  
 Wasser 7  
-/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator\[](size_type) with _CharT = char; _Traits = std::char_traits ; _Alloc = std::allocatorchar;  reference = char&; size_type = long unsigned int]: Assertion '__pos = size()' failed.  
+/usr/include/c++/15/bits/basic_string.h:1369: std::\_\_cxx11::basic_string<_CharT, _Traits, \_Alloc>::reference std::\_\_cxx11::basic_string<_CharT, _Traits, _Alloc>::operator\[](size_type) with _CharT = char; _Traits = std::char_traits ; _Alloc = std::allocatorchar;  reference = char&; size_type = long unsigned int]: Assertion '__pos = size()' failed.  
 Abgebrochen (Speicherabzug geschrieben)
 
 mit .at() notation
