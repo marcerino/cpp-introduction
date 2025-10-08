@@ -14,13 +14,26 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Folien/day5.pdf"
+                "file": "Folien/day6.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "day5"
+              "title": "day6"
+            }
+          },
+          {
+            "id": "671eee9c0747c9a1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Folien/day6.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "day6"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "5852796125198491",
@@ -33,12 +46,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
+                "file": "Notizen/Memory management, lifetime, pointers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lambdas, Enums, struct and class, class template, compilation"
+              "title": "Memory management, lifetime, pointers"
             }
           }
         ]
@@ -186,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,22 +213,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e32432dcdf70e92f",
+  "active": "671eee9c0747c9a1",
   "lastOpenFiles": [
+    "Notizen/Memory management, lifetime, pointers.md",
+    "Folien/day6.pdf",
+    "Pasted image 20251008104442.png",
+    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
+    "Folien/day5.pdf",
     "cppCode/oop/oop",
     "Folien/day2.pdf",
-    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
     "cppCode/oop/a.out",
     "cppCode/oop/birthday.o",
     "Notizen/Object-oriented programming 1, Essential operations, Regular types.md",
     "Notizen/Control flow, functions (overloading), function templates.md",
-    "Folien/day5.pdf",
     "cppCode/oop/birthday.cpp",
     "Notizen/tuples, more data containers, algorithms.md",
     "Folien/day3.pdf",
     "cppCode/oop/birthday.hpp",
     "cppCode/oop/oop.cpp",
-    "cppCode/oop",
     "media/Pasted image 20251007111054.png",
     "Notizen/C++ Grundlagen.md",
     "media/Pasted image 20251005223656.png"
