@@ -123,8 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "329c9ca62867c8e5",
@@ -226,14 +225,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5ee76217a0d0c367",
+  "active": "6984fd2cec7a81f2",
   "lastOpenFiles": [
     "Folien/day7.pdf",
     "Notizen/Object-oriented programming 2, move-semantics, forwarding.md",
-    "Pasted image 20251009111222.png",
-    "Pasted image 20251009110320.png",
-    "Pasted image 20251009104157.png",
-    "Pasted image 20251009103502.png",
+    "media/Pasted image 20251009111222.png",
+    "media/Pasted image 20251009110320.png",
+    "media/Pasted image 20251009104157.png",
+    "media/Pasted image 20251009103502.png",
     "Notizen/Memory management, lifetime, pointers.md",
     "Folien/day6.pdf",
     "media/Pasted image 20251008104442.png",
