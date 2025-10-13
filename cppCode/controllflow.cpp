@@ -91,7 +91,7 @@ std::cout << "Floating point!\n";
 void print(double const) 
 { 
 std::cout << "Double !\n";
-} 
+}  
 // Funktionen von Task III
 
 template <typename U> 
