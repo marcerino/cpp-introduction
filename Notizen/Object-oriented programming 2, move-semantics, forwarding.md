@@ -1,4 +1,4 @@
-r value ist ein Objekt dass keinen Namen hat (nicht an einen Namen gebunden)
+r-value ist ein Objekt dass keinen Namen hat (nicht an einen Namen gebunden)
 ```c++
 size_t s1c = size_t{1};  
 
