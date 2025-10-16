@@ -152,6 +152,22 @@ We distinguish two roles of inheritance:
 - Implementation inheritance: A base class provides functions or data that simplifies the definition of a derived class.
 
 ```c++
+#include <cassert> // provides the assert() macro/function 
+
+class Birthday 
+{ 
+private: uint16_t month{}; uint16_t day{}; 
+public: 
+Birthday() = default; 
+Birthday(uint16_t const m, uint16_t const d) 
+{ set_month(m); set_day(d); } 
+uint16_t get_day() const { return day; } 
+uint16_t get_month() const { return month; } 
+
+void set_day(uint16_t const d) { assert(d <= 31); day = d; } // lazy 😉 
+void set_month(uint16_t const m) { assert(m <= 12); month = m; }
+};
+
 class ExactBirthday : public Birthday 
 { 
 private: 
@@ -169,7 +185,8 @@ public:
 	
 	// or: 
 	
-	ExactBirthday(uint16_t const m, uint16_t const d, uint16_t const h) : Birthday(m, d) 
+	ExactBirthday(uint16_t const m, uint16_t const d, uint16_t const h) 
+	: Birthday(m, d) 
 	{set_hour(h); }
 	
 	uint16_t get_hour() const { return hour; } 
@@ -199,3 +216,9 @@ Derived types are implicitly convertible to their base types so bool operator \=
 
 # Aufgaben
 
+Can you compare objects of type Birthtime with Birthdate? What are the semantics?
+Yes, you can Compare, it will check the most recent Origin and their common members
+
+Write a free function void print(Birthdate & d) that streams out the date in "YYYY-MM- DD" notation. What happens when you print a Birthtime with this function? Does conversion take place?
+
+It cuts all of its experience 

@@ -17,6 +17,7 @@ public:
     void set_month(uint16_t const m); 
     void set_year(uint16_t const y);
 
+
     // Default constructor 
     Birthday();
 
@@ -37,3 +38,4 @@ public:
 
 bool operator==(Birthday const & lhs, Birthday const & rhs);
 bool operator!=(Birthday const & lhs, Birthday const & rhs);
+bool operator<(Birthday const & lhs, Birthday const & rhs);

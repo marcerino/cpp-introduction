@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <tuple> 
 #include "birthday.hpp"
-
+#include <iostream>
 uint16_t Birthday::get_day() const { return day; }
 uint16_t Birthday::get_month() const { return month; }
 uint16_t Birthday::get_year() const { return year; }
@@ -14,7 +14,7 @@ void Birthday::set_year(uint16_t const y) { assert(y <= 6000); year = y; }
 Birthday::Birthday() : year(0), month(0), day(0) {}
 
 Birthday::Birthday(Birthday const & c)
-    : year(c.get_year()), month(c.get_month()), day(c.get_day()) {}
+    :  year(c.get_year()), month(c.get_month()), day(c.get_day()) {}
 
 Birthday & Birthday::operator=(Birthday const & rhs) {
     year = rhs.year;
@@ -40,3 +40,4 @@ bool operator==(Birthday const & lhs, Birthday const & rhs) {
 bool operator!=(Birthday const & lhs, Birthday const & rhs) {
     return !(lhs == rhs);
 }
+

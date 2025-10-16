@@ -6,7 +6,7 @@
       {
         "id": "8153fbf141bab755",
         "type": "tabs",
-        "dimension": 44.82942430703625,
+        "dimension": 44.79695431472081,
         "children": [
           {
             "id": "e32432dcdf70e92f",
@@ -38,10 +38,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Folien/day7.pdf"
+                "file": "Folien/day6.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "day7"
+              "title": "day6"
             }
           }
         ],
@@ -50,7 +50,7 @@
       {
         "id": "5852796125198491",
         "type": "tabs",
-        "dimension": 55.17057569296375,
+        "dimension": 55.203045685279186,
         "children": [
           {
             "id": "5ee76217a0d0c367",
@@ -58,12 +58,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notizen/Object-oriented programming 2, move-semantics, forwarding.md",
+                "file": "Notizen/Memory management, lifetime, pointers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Object-oriented programming 2, move-semantics, forwarding"
+              "title": "Memory management, lifetime, pointers"
             }
           }
         ]
@@ -85,7 +85,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -211,7 +211,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,27 +228,27 @@
   },
   "active": "5ee76217a0d0c367",
   "lastOpenFiles": [
-    "Folien/day7.pdf",
     "Folien/day6.pdf",
+    "Notizen/Memory management, lifetime, pointers.md",
+    "Folien/day7.pdf",
+    "cppCode/Livetimes-myvector/myvector.hpp",
+    "cppCode/Livetimes-myvector/main.cpp",
+    "cppCode/Livetimes-myvector",
+    "Folien/day8.pdf",
+    "Notizen/Object-oriented programming 1, Essential operations, Regular types.md",
+    "Folien/day5.pdf",
+    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
+    "cppCode/oop/a.out",
+    "cppCode/oop/birthtime.o",
+    "cppCode/oop/birthtime.hpp",
     "Notizen/Object-oriented programming 2, move-semantics, forwarding.md",
     "media/Pasted image 20251009111222.png",
     "media/Pasted image 20251009110320.png",
     "media/Pasted image 20251009104157.png",
     "media/Pasted image 20251009103502.png",
-    "Notizen/Memory management, lifetime, pointers.md",
     "media/Pasted image 20251008104442.png",
-    "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
-    "Folien/day5.pdf",
-    "cppCode/oop/oop",
-    "Folien/day2.pdf",
-    "cppCode/oop/a.out",
-    "cppCode/oop/birthday.o",
-    "Notizen/Object-oriented programming 1, Essential operations, Regular types.md",
     "Notizen/Control flow, functions (overloading), function templates.md",
-    "cppCode/oop/birthday.cpp",
     "Notizen/tuples, more data containers, algorithms.md",
-    "Folien/day3.pdf",
-    "cppCode/oop/birthday.hpp",
     "media/Pasted image 20251007111054.png",
     "Notizen/C++ Grundlagen.md",
     "media/Pasted image 20251005223656.png"

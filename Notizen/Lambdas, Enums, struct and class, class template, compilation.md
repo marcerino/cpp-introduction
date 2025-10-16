@@ -230,12 +230,12 @@ void example_func() { std::cout << "!!!"; }
 Build-process unix:
 First we build an object file for every cpp other than main:
 ```bash
-% g++ -std=c++17 -Wall -Wextra -Werror -pedantic example.cpp -c 
+g++ -std=c++17 -Wall -Wextra -Werror -pedantic example.cpp -c 
 ```
 (note the -c!) This created example.o.
 Finally we build main.cpp and link it with the existing object files:
 ```bash
-% g++ -std=c++17 -Wall -Wextra -Werror -pedantic main.cpp example.o 
+g++ -std=c++17 -Wall -Wextra -Werror -pedantic main.cpp example.o 
 ```
 In larger projects build-systems like CMake, Meson, Gnu-Make, Ninja or a combination thereof handle this for us.
 # Aufgaben

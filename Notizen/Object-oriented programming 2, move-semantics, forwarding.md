@@ -278,7 +278,6 @@ Sobald eine  memberfunlktion ein `virtual ....  = 0` hat, ist es eine abtrakte k
 
 
 ## Interface abstractclasses Inheriatance Summary
-
 - Virtual functions facilitate specialisation similar to inheritance in other languages like Java. 
 - In C++ functions need to be explicitly marked as virtual for this to work.
 - If you override a virtual function in a derived class, additionally mark it as override. 

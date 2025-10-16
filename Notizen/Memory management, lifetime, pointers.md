@@ -185,3 +185,12 @@ Using smart pointers we can tie the lifetime and management of a heap-allocated 
 This makes it easier to reason about resource management and is safer in many situations.
 
 # Tasks Tag 6
+
+```c++
+size_t * const ip = new size_t{7}; //pointer to a constant variable
+
+size_t const * jp = new size_t{7}; //a constant pointer to variable
+
+size_t const * const kp = new size_t{7}; //both
+```
+
