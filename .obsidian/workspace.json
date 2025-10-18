@@ -6,7 +6,7 @@
       {
         "id": "8153fbf141bab755",
         "type": "tabs",
-        "dimension": 44.79695431472081,
+        "dimension": 58.95522388059702,
         "children": [
           {
             "id": "e32432dcdf70e92f",
@@ -50,7 +50,7 @@
       {
         "id": "5852796125198491",
         "type": "tabs",
-        "dimension": 55.203045685279186,
+        "dimension": 41.04477611940299,
         "children": [
           {
             "id": "5ee76217a0d0c367",
@@ -226,21 +226,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5ee76217a0d0c367",
+  "active": "e40109934c5e3acb",
   "lastOpenFiles": [
+    "Folien/day8.pdf",
+    "Folien/day7.pdf",
     "Folien/day6.pdf",
     "Notizen/Memory management, lifetime, pointers.md",
-    "Folien/day7.pdf",
+    "cppCode/Livetimes-myvector/a.out",
     "cppCode/Livetimes-myvector/myvector.hpp",
     "cppCode/Livetimes-myvector/main.cpp",
     "cppCode/Livetimes-myvector",
-    "Folien/day8.pdf",
     "Notizen/Object-oriented programming 1, Essential operations, Regular types.md",
     "Folien/day5.pdf",
     "Notizen/Lambdas, Enums, struct and class, class template, compilation.md",
     "cppCode/oop/a.out",
     "cppCode/oop/birthtime.o",
-    "cppCode/oop/birthtime.hpp",
     "Notizen/Object-oriented programming 2, move-semantics, forwarding.md",
     "media/Pasted image 20251009111222.png",
     "media/Pasted image 20251009110320.png",

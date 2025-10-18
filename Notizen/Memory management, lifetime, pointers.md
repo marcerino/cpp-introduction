@@ -193,4 +193,28 @@ size_t const * jp = new size_t{7}; //a constant pointer to variable
 
 size_t const * const kp = new size_t{7}; //both
 ```
+___
+How would you declare/initialise/delete a two-dimensional array of dimensions n and m (n and m both not known at compile time)?
 
+The awnser is a Dynamic array of the Dynamic array type and then a for loop that at every position of the array initialyzes a new arry  
+```c++
+int** rows = new int*[m];
+for (int* elem : rows) 
+	elem = new[m]{}
+```
+
+Can you create reference to pointers and vice versa? What does that mean?
+
+```c++
+int main()
+{
+    int a = 4;
+    int* b = &a;
+    int &c = a;
+    int** d = &b;
+    int* e = &c;
+    std::cout << a << *b << c << **d << e;
+}
+```
+Pointer to  reference is possible
+A reference to  a pointer is possible but dereferencing is wiered

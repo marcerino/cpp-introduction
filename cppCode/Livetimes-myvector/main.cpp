@@ -1,9 +1,10 @@
 #include "myvector.hpp"
 #include <cstdint>
 #include <stddef.h>
-
+#include <iostream>
 int main() {
-    size_t       * const   ip = new size_t{7};
-    size_t const *         jp = new size_t{7};
-    size_t const * const   kp = new size_t{7};
+    MyVector p = MyVector<uint16_t>();
+    size_t a = 8;
+    size_t const size = p.size();
+    std::cout << a << size <<"\n";
 }
