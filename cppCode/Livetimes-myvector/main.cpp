@@ -1,10 +1,17 @@
 #include "myvector.hpp"
 #include <cstdint>
-#include <stddef.h>
 #include <iostream>
+
 int main() {
-    MyVector p = MyVector<uint16_t>();
+    MyVector<uint16_t> p{2};
     size_t a = 8;
+    p.push_back(1);
+    p.push_back(1);
+    p.push_back(1);
+    p.push_back(1);
+    p.push_back(7);
     size_t const size = p.size();
-    std::cout << a << size <<"\n";
+
+    a = p[4];
+    std::cout << a << size << "\n";
 }

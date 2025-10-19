@@ -6,7 +6,7 @@
       {
         "id": "8153fbf141bab755",
         "type": "tabs",
-        "dimension": 58.95522388059702,
+        "dimension": 58.95522388059701,
         "children": [
           {
             "id": "e32432dcdf70e92f",
@@ -38,10 +38,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Folien/day6.pdf"
+                "file": "Folien/day8.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "day6"
+              "title": "day8"
             }
           }
         ],
@@ -228,11 +228,11 @@
   },
   "active": "e40109934c5e3acb",
   "lastOpenFiles": [
-    "Folien/day8.pdf",
     "Folien/day7.pdf",
     "Folien/day6.pdf",
-    "Notizen/Memory management, lifetime, pointers.md",
     "cppCode/Livetimes-myvector/a.out",
+    "Notizen/Memory management, lifetime, pointers.md",
+    "Folien/day8.pdf",
     "cppCode/Livetimes-myvector/myvector.hpp",
     "cppCode/Livetimes-myvector/main.cpp",
     "cppCode/Livetimes-myvector",

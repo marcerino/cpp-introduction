@@ -218,3 +218,8 @@ int main()
 ```
 Pointer to  reference is possible
 A reference to  a pointer is possible but dereferencing is wiered
+
+
+Is it efficient to do a resize on ever pushback? 
+Nope
+When do you resize by how much? How does this affect the run-time behaviour? slon
